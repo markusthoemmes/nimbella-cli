@@ -1,1 +1,5 @@
 node_modules/
+.nimbella/
+/toomany/packages
+/project-create/hello
+__deployer__.zip
