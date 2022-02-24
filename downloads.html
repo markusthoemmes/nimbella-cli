@@ -10,19 +10,6 @@
 			<h1>DigitalOcean Serverless Tools Download Space</h2>
 			<p>This DigitalOcean space is a place from which serverless tools can be installed.  It is currently
 			updated manually when tools change.  This will be automated eventually.  The site may be moved in the future.
-			<p>To download the <em>most recent build</em> of the <code>nim</code> CLI:
-			<ul>
-			  <li><a href="/latest-nim/macos/nim.pkg">Installer</a> for MacOs.
-        <ul><li>The installer is unsigned and may give security warnings.</li></ul>
-			  <li><a href="/latest-nim/nim-install-mac.sh">Script</a> for network install on MacOs.
-			  <ul><li>You might find this more convenient than using the installer.</li></ul>
-        <li><a href="/latest-nim/win/nim-x64.exe">Installer</a> for Windows.
-        <ul><li>The installer is unsigned and may give security warnings, both in the browser and when you open the installer.</li>
-          <li>There is currently no script alternative for Windows.</li></ul>
-        <li><a href="/latest-nim/nim-install-linux.sh">Script</a> for network install on Linux.
-        <ul><li>There is no installer for Linux equivalent to those for MacOS and Windows.</li></ul>
-      </ul>
-			<p>"Latest" builds are not explicitly versioned (they keep the version of the last stable release).
 			<p>To download the latest <em>stable release</em> of the <code>nim</code> CLI:
       <ul>
         <li><a href="/stable-nim/macos/nim.pkg">Installer</a> for MacOs.
@@ -37,6 +24,16 @@
       </ul>
       <p>Stable releases have semver-conformant versions assigned at release time.  The current version
       is <b id="version"><i>unknown</i></b>
+			<p>To download the <em>most recent build</em> of the <code>nim</code> CLI, not necessarily stable, not necessarily corresponding to a specific release:
+			<ul>
+			  <li><a href="/latest-nim/macos/nim.pkg">Installer</a> for MacOs.
+			  <li><a href="/latest-nim/nim-install-mac.sh">Script</a> for network install on MacOs.
+        <li><a href="/latest-nim/win/nim-x64.exe">Installer</a> for Windows.
+        <li><a href="/latest-nim/nim-install-linux.sh">Script</a> for network install on Linux.
+      </ul>
+			<p>"Latest" builds are not explicitly versioned (they keep the version of the last stable release).  These are provided primarily for our own internal testing and not recommended for inclusion as dependencies in other components.
+			<h3>Downloads for the 'doctl sandbox' feature (under development, updated periodically)</h3>
+			<p>Use <a href="/doctl-dev-release.html">this link for instructions and downloads</a>.
       <script type="text/javascript">
         $('#version').load('nim-cli-stable-version')
       </script>
