@@ -4,13 +4,7 @@ This directory is the internal counterpart of the `tests` directory in the publi
 
 ### Running the tests
 
-- Install the `bats` tool.
-
-```
-npm install -g bats
-```
-
-- Install the `bats` plugin (managed as npm dev deps).
+- Install the `bats` tool and supporting plugins:
 
 ```
 npm install
