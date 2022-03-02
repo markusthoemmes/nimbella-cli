@@ -3,3 +3,4 @@ node_modules/
 /toomany/packages
 /project-create/hello
 __deployer__.zip
+/shared_build/build/package-lock.json

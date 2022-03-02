@@ -8,7 +8,7 @@ packages:
         runtime: nodejs:default
         name: gateway
         limits:
-          timeout: 30000
+          timeout: 3000
       - <<: *default_action
         name: gateway
       - <<: *default_action
