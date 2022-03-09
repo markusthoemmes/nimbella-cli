@@ -108,6 +108,14 @@ const NON_CONFORMING_BUT_LICENSED = {
         license: 'MIT',
         location: 'Readme.md',
         verifier: `## License\n\n(The MIT License)\n\nCopyright (c) 2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;`
+    },
+    
+    'buffers': {
+        license: 'MIT',
+        location: 'README.markdown',
+        verifier: `buffers`
+        // This is a kluge ... this package has an MIT license statement in package.json in the github repo but not in the npm repo
+        // We take the license from the github repo as operative, however. 
     }
 }
 
