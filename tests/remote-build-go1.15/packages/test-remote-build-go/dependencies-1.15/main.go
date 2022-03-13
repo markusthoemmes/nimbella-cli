@@ -17,16 +17,14 @@
 
 package main
 
-import "fmt"
+import _ "github.com/pkg/errors"
 import "runtime"
 
-// Hello function for the action
-func Main(obj map[string]interface{}) map[string]interface{} {
-	name, ok := obj["name"].(string)
+func Main(args map[string]interface{}) map[string]interface{} {
+	name, ok := args["name"].(string)
 	if !ok {
-		name = "world"
+		name = "stranger"
 	}
-	fmt.Printf("name=%s\n", name)
 	msg := make(map[string]interface{})
 	msg["greeting"] = "Hello, " + name + "!" + " (" + runtime.Version() + ")"
 	return msg

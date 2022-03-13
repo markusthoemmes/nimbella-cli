@@ -18,6 +18,7 @@
 package main
 
 import _ "github.com/pkg/errors"
+import "runtime"
 
 func Main(args map[string]interface{}) map[string]interface{} {
 	name, ok := args["name"].(string)
@@ -25,6 +26,6 @@ func Main(args map[string]interface{}) map[string]interface{} {
 		name = "stranger"
 	}
 	msg := make(map[string]interface{})
-	msg["body"] = "Hello, " + name + "!"
+	msg["greeting"] = "Hello, " + name + "!" + " (" + runtime.Version() + ")"
 	return msg
 }
