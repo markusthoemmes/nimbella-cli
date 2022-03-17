@@ -1,7 +1,0 @@
-packages:
-  - name: test-shared-build
-    actions:
-    - name: first-test
-      runtime: nodejs:default
-    - name: second-test
-      runtime: nodejs:default
