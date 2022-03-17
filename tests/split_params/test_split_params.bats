@@ -9,11 +9,10 @@ teardown_file() {
 }
 
 @test "deploy project with split-level parameters in config" {
-	run $NIM action get test_split_params/authorize
+	run $NIM action invoke test_split_params/authorize -r
 	assert_success
 	assert_output --partial '"parameters": [
     {
-      "init": true,
       "key": "e1",
       "value": "eone"
     },
@@ -22,7 +21,6 @@ teardown_file() {
       "value": "pthree"
     },
     {
-      "init": true,
       "key": "e3",
       "value": "ethree"
     },
@@ -31,7 +29,6 @@ teardown_file() {
       "value": "ptwo"
     },
     {
-      "init": true,
       "key": "e2",
       "value": "etwo"
     },
@@ -39,5 +36,5 @@ teardown_file() {
       "key": "p1",
       "value": "pone"
     }
-  ],'
+  ]'
 }
