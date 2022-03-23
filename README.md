@@ -22,7 +22,7 @@
 
 This repository contains the build scripts for the DigitalOcean-specific build of `nimbella-cli`.
 
-The `nimbella-cli` repo itself is open source and its build is more generic.  The scripts here reach into that repo to do the build in a more tailored wsay.
+The `nimbella-cli` repo itself is open source and its build is more generic.  The scripts here reach into that repo to do the build in a more tailored way.
 
 The internal build options are described in initial comments in `build.sh` in this repository.
 
