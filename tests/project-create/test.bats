@@ -12,7 +12,7 @@ function test_one() {
     echo "Failed to create for language $1" >&2
     exit 1
   fi
-  $NIM project deploy $BATS_TEST_DIRNAME/hello >/dev/null 2>&1
+  $NIM project deploy $BATS_TEST_DIRNAME/hello --remote-build >/dev/null 2>&1
   if [ "$?" != "0" ]; then
     echo "Failed to deploy for language $1" >&2
     exit 1
